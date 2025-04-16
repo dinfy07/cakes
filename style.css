@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: relative;
+    color: white;
+    & .bg{
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+    & .menu{
+         display: flex;
+         justify-content: space-around;
+         color: white;
+         align-items: center;
+         width: 100%;
+         & .logo{
+             font-size: 13px;
+         }
+         & .contact{
+             & ul{
+                 display: flex;
+                 gap: 20px;
+                 list-style: none;
+                 padding: 0;
+                 margin: 0;
+
+                 & p{
+                     font-size: 12px;
+                     padding: 0;
+                     margin: 0;
+                     width: 50%;
+                 }
+                 & h1{
+                     font-size: 16px;
+                     padding: 0;
+                     margin: 0;
+                 }
+                 & li{
+                     display: flex;
+                     gap: 10px;
+                     align-items: center;
+                 }
+                 & .noflex{
+                     display: block;
+                     & h1{
+                         font-size: 20px;
+                     }
+                     & p{
+                         width: 100%;
+                     }
+                 }
+             }
+         }
+     }
+    & .description{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 130px;
+        padding-left: 180px;
+        overflow: hidden;
+        & h6{
+            background-color: white;
+            color: black;
+            width: fit-content;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: initial;
+        }
+        & h1{
+            width: 50%;
+            margin: 0;
+            line-height: 40px;
+        }
+        & h2{
+            font-weight: initial;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        & .button_text{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            & p{
+                margin: 0;
+
+            }
+            & button{
+                padding: 15px 30px;
+                border-radius: 8px;
+                background-color: #FED84C;
+            }
+        }
+        & .berry1{
+            position: absolute;
+            top: 90px;
+            left: -30px;
+        }
+        & .berry2{
+            position: absolute;
+            top: 80px;
+            right: -30px;
+            transform: rotate(90deg);
+        }
+    }
+    & .berry3{
+        position: absolute;
+        bottom: -300px;
+        right: 300px;
+        transform: rotate(-90deg);
+    }
+    & .leaf4{
+        position: absolute;
+        bottom: -400px;
+        left: -120px;
+    }
+}
